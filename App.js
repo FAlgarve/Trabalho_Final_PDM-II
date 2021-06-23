@@ -3,7 +3,7 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity, TextInput, SafeAreaView, ScrollView } from 'react-native';
+import { View, Text, Image, TouchableOpacity, TextInput, SafeAreaView, ScrollView, ImageBackground } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -424,18 +424,118 @@ function LoginScreen({ navigation }) {
 
   function MangaScreen({ navigation }) {
 	return (
-		<View style={{flex: 1, backgroundColor: '#333',	alignItems: 'center', justifyContent: 'center',}}>
-			<View style={{justifyContent: 'flex-start', marginBottom: '20%', width: '100%'}}>
-				<Image style={{width: 40, height: 40, marginTop: '10%', marginLeft: '5%'}} source={require('./assets/open-book.png')}/>
-			</View>
+		<View style={{flex: 1, backgroundColor: '#333',	alignItems: 'center', justifyContent: 'center', backgroundColor: '#333'}}>
 
-			<SafeAreaView style={{ flex: 1, paddingTop: 10,}}>
-      			<ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ backgroundColor: '#333', marginHorizontal: 20,}}>
-        			<Text style={{ fontSize: 36, color: 'white'}}>
-          				Exemplo de Manga
-        			</Text>
-      			</ScrollView>
-    		</SafeAreaView>
+					
+				<View style={{justifyContent: 'flex-start', width: '100%', backgroundColor: '#333', flexDirection: 'row', marginBottom: '5%', height: '60%'}}>
+					<ImageBackground source={require('./assets/dr_stone.png')} style={{ flex: 1, resizeMode: "cover", justifyContent: "center"}}>
+      					<TouchableOpacity onPress={() => navigation.goBack()} style={{marginTop: 52,}}>
+							<MaterialCommunityIcons name="arrow-left" color={'#00ccff'} size={34}/>
+						</TouchableOpacity>
+
+						<TouchableOpacity style={{backgroundColor: '#1a1a1a', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20, marginTop: 420, borderRadius: 50, width: 250, justifyContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
+							<MaterialCommunityIcons name="play-circle-outline" color={'white'} size={24}/>
+							<View>
+								<Text style={{color: 'white', marginLeft: 5}}>Continuar 106</Text>
+							</View>
+						</TouchableOpacity>
+
+    				</ImageBackground>
+				</View> 
+			<ScrollView showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false} style={{ backgroundColor: '#333', width: '100%', marginTop: 15}}>	
+				<View style={{width: '100%', backgroundColor: '#333'}}>
+
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#201 - Dr. Stone 201</Text>
+					</View>
+				</TouchableOpacity>
+				
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#200 - Dr. Stone 200</Text>
+					</View>
+				</TouchableOpacity>
+
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#199 - Dr. Stone 199</Text>
+					</View>
+				</TouchableOpacity>
+				
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#198 - Dr. Stone 198</Text>
+					</View>
+				</TouchableOpacity>
+
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#197 - Dr. Stone 197</Text>
+					</View>
+				</TouchableOpacity>
+				
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#196 - Dr. Stone 196</Text>
+					</View>
+				</TouchableOpacity>
+
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#195 - Dr. Stone 195</Text>
+					</View>
+				</TouchableOpacity>
+				
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#194 - Dr. Stone 194</Text>
+					</View>
+				</TouchableOpacity>
+
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#193 - Dr. Stone 193</Text>
+					</View>
+				</TouchableOpacity>
+				
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#192 - Dr. Stone 192</Text>
+					</View>
+				</TouchableOpacity>
+
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#191 - Dr. Stone 191</Text>
+					</View>
+				</TouchableOpacity>
+				
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20}}>
+					<MaterialCommunityIcons name="book" color={'#737373'} size={24}/>
+					<View>
+						<Text style={{color: 'white', marginLeft: 5}}>#190 - Dr. Stone 190</Text>
+					</View>
+				</TouchableOpacity>
+
+				<TouchableOpacity style={{backgroundColor: '#333', flexDirection: 'row', paddingHorizontal: 10, paddingVertical: 20, justifyContent: 'center', alignItems: 'center'}}>
+					<View>
+						<Text style={{color: '#00ccff', marginLeft: 5}}>Mostrar Todos os capítulos</Text>
+					</View>
+				</TouchableOpacity>
+				</View>
+			</ScrollView>
 		</View>
 	);
   }
