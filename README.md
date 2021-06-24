@@ -25,3 +25,5 @@ E mais três que façam sentido com o tema escolhido.
 comando para instalar o cliente: npm install --global expo-cli
 
 comando para dar permissoes no windows: set-executionpolicy remotesigned
+
+Quem quiser ver o trabalho no proprio telemovel está aqui: https://expo.io/@f_algarve/Trabalho_Final
