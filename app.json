@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Final work for the programming subject for University",
+    "githubUrl": "https://github.com/FAlgarve/Trabalho_Final_PDM-II"
   }
 }

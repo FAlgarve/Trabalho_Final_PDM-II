@@ -8,6 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import { DoHyeon_400Regular } from '@expo-google-fonts/do-hyeon';
 /*import { greaterOrEq } from 'react-native-reanimated';*/
 
 /*function SplashScreen({ navigation }) {
@@ -31,9 +32,9 @@ function LoginScreen({ navigation }) {
 			
 
 		<View style={{marginBottom: '20%'}}>
-		<Image style={{width: 200, height: 200,}} source={require('./assets/open-book.png')}/>
+		<Image style={{width: 200, height: 200,paddingHorizontal: 40}} source={require('./assets/open-book.png')}/>
 
-		<Text style={{ fontSize: 36, color: 'white',}}>MANGAS PT</Text>
+		<Text style={{ fontSize: 36, color: 'white', fontWeight: 'bold'}}>MANGAS PT</Text>
 		</View>
 
 			<View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent', borderWidth: 0.5, borderColor: '#00ccff', height: 40, borderRadius: 5, margin: 10,}}>
@@ -47,6 +48,7 @@ function LoginScreen({ navigation }) {
 			<View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent', borderWidth: 0.5, borderColor: '#00ccff', height: 40, borderRadius: 5, margin: 10,}}>
 				<Image source={require('./assets/lock.png')} style={{ padding: 10, margin: 5, height: 25, width: 25, resizeMode: 'stretch', alignItems: 'center',}}/>
 					<TextInput
+						secureTextEntry={true}
 						style={{flex: 1, color:'white'}}
 						placeholder="Password"
 						placeholderTextColor='white'
@@ -61,7 +63,7 @@ function LoginScreen({ navigation }) {
 
 			<TouchableOpacity style={{ backgroundColor: '#00a3cc', marginTop: '30%', paddingTop: 20, paddingBottom: 20, paddingLeft: 40, paddingRight: 40, borderRadius: 12,}}
 			onPress={() => navigation.navigate('Main')}>
-				<Text style={{fontSize: 36, color: 'white'}}>Login</Text>
+				<Text style={{fontSize: 36, color: 'white', fontWeight: 'bold'}}>Login</Text>
 			</TouchableOpacity>
 	</View>
 	);
@@ -73,9 +75,9 @@ function LoginScreen({ navigation }) {
 			
 
 		<View style={{marginBottom: '20%'}}>
-		<Image style={{width: 200, height: 200,}} source={require('./assets/open-book.png')}/>
+		<Image style={{width: 200, height: 200, paddingHorizontal: 40}} source={require('./assets/open-book.png')}/>
 
-		<Text style={{ fontSize: 36, color: 'white',}}>MANGAS PT</Text>
+		<Text style={{ fontSize: 36, color: 'white', fontWeight: 'bold'}}>MANGAS PT</Text>
 		</View>
 
 			<View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent', borderWidth: 0.5, borderColor: '#00ccff', height: 40, borderRadius: 5, margin: 10,}}>
@@ -100,6 +102,7 @@ function LoginScreen({ navigation }) {
 				<Image source={require('./assets/lock.png')} style={{ padding: 10, margin: 5, height: 25, width: 25, resizeMode: 'stretch', alignItems: 'center',}}/>
 					<TextInput
 						style={{flex: 1, color:'white'}}
+						secureTextEntry={true}
 						placeholder="Password"
 						placeholderTextColor='white'
 						underlineColorAndroid="transparent"
@@ -110,6 +113,7 @@ function LoginScreen({ navigation }) {
 				<Image source={require('./assets/lock.png')} style={{ padding: 10, margin: 5, height: 25, width: 25, resizeMode: 'stretch', alignItems: 'center',}}/>
 					<TextInput
 						style={{flex: 1, color:'white'}}
+						secureTextEntry={true}
 						placeholder="Confirm Password"
 						placeholderTextColor='white'
 						underlineColorAndroid="transparent"
@@ -118,7 +122,7 @@ function LoginScreen({ navigation }) {
 
 			<TouchableOpacity style={{ backgroundColor: '#00a3cc', marginTop: '30%', paddingTop: 20, paddingBottom: 20, paddingLeft: 40, paddingRight: 40, borderRadius: 12,}}
 			onPress={() => navigation.navigate('Main')}>
-				<Text style={{fontSize: 36, color: 'white'}}>Registar</Text>
+				<Text style={{fontSize: 36, color: 'white', fontWeight: 'bold'}}>Registar</Text>
 			</TouchableOpacity>
 	</View>
 	);
@@ -130,15 +134,16 @@ function LoginScreen({ navigation }) {
 			
 
 		<View style={{marginBottom: '20%'}}>
-		<Image style={{width: 200, height: 200,}} source={require('./assets/open-book.png')}/>
+		<Image style={{width: 200, height: 200, paddingHorizontal: 40}} source={require('./assets/open-book.png')}/>
 
-		<Text style={{ fontSize: 36, color: 'white',}}>MANGAS PT</Text>
+		<Text style={{ fontSize: 36, color: 'white', fontWeight: 'bold'}}>MANGAS PT</Text>
 		</View>
 
 			<View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent', borderWidth: 0.5, borderColor: '#00ccff', height: 40, borderRadius: 5, margin: 10,}}>
 				<Image source={require('./assets/lock.png')} style={{ padding: 10, margin: 5, height: 25, width: 25, resizeMode: 'stretch', alignItems: 'center',}}/>
 					<TextInput
 						style={{flex: 1, color:'white'}}
+						secureTextEntry={true}
 						placeholder="New Password"
 						placeholderTextColor='white'
 						underlineColorAndroid="transparent"
@@ -149,6 +154,7 @@ function LoginScreen({ navigation }) {
 				<Image source={require('./assets/lock.png')} style={{ padding: 10, margin: 5, height: 25, width: 25, resizeMode: 'stretch', alignItems: 'center',}}/>
 					<TextInput
 						style={{flex: 1, color:'white'}}
+						secureTextEntry={true}
 						placeholder="Confirm New Password"
 						placeholderTextColor='white'
 						underlineColorAndroid="transparent"
@@ -157,7 +163,7 @@ function LoginScreen({ navigation }) {
 
 			<TouchableOpacity style={{ backgroundColor: '#00a3cc', marginTop: '30%', paddingTop: 20, paddingBottom: 20, paddingLeft: 40, paddingRight: 40, borderRadius: 12,}}
 			onPress={() => navigation.navigate('Login')}>
-				<Text style={{fontSize: 36, color: 'white'}}>Alterar</Text>
+				<Text style={{fontSize: 36, color: 'white', fontWeight: 'bold'}}>Alterar</Text>
 			</TouchableOpacity>
 	</View>
 	);
